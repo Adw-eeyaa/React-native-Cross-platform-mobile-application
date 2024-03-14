@@ -37,12 +37,12 @@ export default function App() {
       <ScrollView style={{paddingTop:10}} horizontal={true} >
         <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
         <TouchableOpacity>
-        <Image source={{uri:'https://upload.wikimedia.org/wikipedia/en/1/19/K-On%21_DVD_volume_1_cover.jpg'}} style={{height:350,width:180,borderRadius:10,borderColor:'white',borderWidth:5,marginLeft:10}}></Image>
+        <Image source={require('./assets/burningFightingfighter.jpg')} style={{height:350,width:180,borderRadius:10,borderColor:'white',borderWidth:5,marginLeft:10}}></Image>
         </TouchableOpacity>
         
         
         <TouchableOpacity>
-        <Image source={require('./assets/musaigen no phantom world.jpg')} style={{height:350,width:170,borderRadius:10,borderColor:'white',borderWidth:5,paddingTop:300,marginLeft:10}}></Image>
+        <Image source={require('./assets/sound-euphonium.jpg')} style={{height:350,width:170,borderRadius:10,borderColor:'white',borderWidth:5,paddingTop:300,marginLeft:10}}></Image>
         </TouchableOpacity>
         <TouchableOpacity>
         <Image source={require('./assets/AMB.jpg')} style={{height:350,width:160,borderRadius:10,borderColor:'white',borderWidth:5,marginLeft:10}}></Image>
@@ -52,12 +52,16 @@ export default function App() {
         
       </ScrollView>
       
-      <View style={{paddingTop:10}}>
-        <Button color="orange" title='Click Here' onPress={() => Alert.alert("LMFAO","BRUH",[{text:"YES"},{text:"NO"},])}></Button>
+      
+      <View style={{paddingTop:10,width:100,alignSelf:'center'}}>
+        <Button style={{fontWeight:'bold',color:'black'}} color="orange" title='MORE'  onPress={() => Alert.alert("LMFAO","BRUH",[{text:"YES"},{text:"NO"},])}></Button>
         <TextInput></TextInput>
         </View>
-      
     </ScrollView>
+    
+
+
+    
   );
 }
 
