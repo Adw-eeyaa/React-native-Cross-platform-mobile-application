@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor:  'black',
     paddingTop: Platform.OS == 'android' ? 20:0,
-    paddingEnd: Platform.OS == 'android'? 0:0,  
+      
 
   },
   text:{
