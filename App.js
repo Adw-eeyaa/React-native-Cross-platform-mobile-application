@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Platform, SafeAreaView, StyleSheet, Text,TouchableOpacity, View,Image,Button, Alert,ImageBackground,TextInput,ScrollView} from 'react-native';
-
+import {useFonts} from 'expo-font';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons.js';
@@ -41,7 +41,7 @@ export default function App() {
         </TouchableOpacity>
         
         
-        <TouchableOpacity>
+        <TouchableOpacity >
         <Image source={require('./assets/sound-euphonium.jpg')} style={{height:350,width:170,borderRadius:10,borderColor:'white',borderWidth:5,paddingTop:300,marginLeft:10}}></Image>
         </TouchableOpacity>
         <TouchableOpacity>
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor:  'black',
     paddingTop: Platform.OS == 'android' ? 20:0,
-      
+    paddingEnd: Platform.OS == 'android'? 0:0,  
 
   },
   text:{
@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
      borderWidth: 9.6,
      borderRadius:55,
      fontWeight:'400',
+     
      
      
      },
