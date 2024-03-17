@@ -1,9 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { Platform, SafeAreaView, StyleSheet, Text,TouchableOpacity, View,Image,Button, Alert,ImageBackground,TextInput,ScrollView} from 'react-native';
-import {useFonts} from 'expo-font';
+import * as Font from 'expo-font';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons.js';
+
+
+const getFonts = () => {
+  return Font.loadAsync({
+    'nunito-regular':require('./assets/fonts/InterVariable.ttf')
+  })
+}
 
 export default function App() {
   const router = useRouter();
