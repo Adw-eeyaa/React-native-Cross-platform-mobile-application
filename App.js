@@ -17,12 +17,12 @@ export default function App() {
   return (
     <ScrollView style={styles.container} >
       
-      <ImageBackground source={{uri:'https://jovelon.files.wordpress.com/2014/02/tumblr_n0bwlwivnr1qeodauo1_500.gif'}} ><Text style={styles.text}>Home</Text></ImageBackground>
+      <ImageBackground source={{uri:'https://jovelon.files.wordpress.com/2014/02/tumblr_n0bwlwivnr1qeodauo1_500.gif'}} style={{marginLeft:-20,marginRight:-20}} ><Text style={styles.text}>Home</Text></ImageBackground>
       <View>
-        <TextInput style={styles.input} placeholder='Search Anime...' placeholderTextColor='white'>  </TextInput>
+        <TextInput style={styles.input} placeholder='Search Anime...' placeholderTextColor='white' >  </TextInput>
       </View>
-      <View style={{paddingTop:8}}>
-      <Text style={{backgroundColor:'purple',color:'black',fontSize:30,fontStyle:'normal',fontWeight:'bold'}}>Trending Anime</Text>
+      <View style={styles.bg}>
+      <ImageBackground source={{uri:'https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl90fs38w1137734vmqyjmifzoeb/public'}}><Text style={{color:'black',fontSize:30,fontStyle:'normal',fontWeight:'bold'}}>Trending Anime</Text></ImageBackground>   
       </View>
       <ScrollView style={{paddingTop:10}} horizontal={true} >
         <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
@@ -58,12 +58,30 @@ export default function App() {
         
         
       </ScrollView>
-      
+
+      <ScrollView style={{paddingTop:10}} horizontal={true} >
+        <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
+        <TouchableOpacity>
+        <Image source={{uri:'https://m.media-amazon.com/images/M/MV5BZmUzMThjOTItZGY4ZS00ODcwLTliNTMtYjVkM2JmY2QxNmRhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg'}} style={{height:350,width:180,borderRadius:10,borderColor:'white',borderWidth:5,marginLeft:10}}></Image>
+        </TouchableOpacity>
+        
+        
+        <TouchableOpacity >
+        <Image source={require('./assets/sound-euphonium.jpg')} style={{height:350,width:170,borderRadius:10,borderColor:'white',borderWidth:5,paddingTop:300,marginLeft:10}}></Image>
+        </TouchableOpacity>
+        <TouchableOpacity>
+        <Image source={require('./assets/AMB.jpg')} style={{height:350,width:160,borderRadius:10,borderColor:'white',borderWidth:5,marginLeft:10}}></Image>
+        </TouchableOpacity>
+        </View>
+        
+        
+      </ScrollView>
       
       <View style={{paddingTop:10,width:100,alignSelf:'center'}}>
         <Button style={{fontWeight:'bold',color:'black'}} color="orange" title='MORE'  onPress={() => Alert.alert("LMFAO","BRUH",[{text:"YES"},{text:"NO"},])}></Button>
         <TextInput></TextInput>
         </View>
+        
     </ScrollView>
     
 
@@ -85,7 +103,7 @@ const styles = StyleSheet.create({
      borderWidth:1,
      color:'hwb(120,269%,10%)',
      fontWeight:'bold',
-     borderColor:'black',
+     borderColor:'white',
      borderCurve:'continuous',
      fontSize:35,
      textAlignVertical:'center',
@@ -104,6 +122,14 @@ const styles = StyleSheet.create({
       width:200,
       height:30,
       color:'white',
+      alignSelf:'center',
+     },
+     bg:{
+      paddingTop:10,
+      borderWidth:1,
+      borderColor:'white',
+      borderCurve:'continuous',
+      borderRadius:55,
      }
      
 
