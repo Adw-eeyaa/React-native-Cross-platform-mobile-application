@@ -17,12 +17,16 @@ export default function App() {
   return (
     <ScrollView style={styles.container} >
       
-      <ImageBackground source={{uri:'https://jovelon.files.wordpress.com/2014/02/tumblr_n0bwlwivnr1qeodauo1_500.gif'}} style={{marginLeft:-20,marginRight:-20}} ><Text style={styles.text}>Home</Text></ImageBackground>
-      <View>
-        <TextInput style={styles.input} placeholder='Search Anime...' placeholderTextColor='white' >  </TextInput>
+      <ImageBackground source={{uri:'https://jovelon.files.wordpress.com/2014/02/tumblr_n0bwlwivnr1qeodauo1_500.gif'}} style={{marginLeft:-20,marginRight:-20}} ><Text style={styles.text}>Home</Text>
+     
+      
+      <View style={{paddingTop:10,paddingBottom:10}}>
+      <ImageBackground source={{uri:'https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl90fs38w1137734vmqyjmifzoeb/public'}} style={styles.image}><Text style={{color:'black',fontSize:20,fontStyle:'normal',fontWeight:'bold',alignSelf:'center',paddingTop:10}}>Trending Anime</Text></ImageBackground>
+      
       </View>
-      <View style={styles.bg}>
-      <ImageBackground source={{uri:'https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl90fs38w1137734vmqyjmifzoeb/public'}}><Text style={{color:'black',fontSize:30,fontStyle:'normal',fontWeight:'bold'}}>Trending Anime</Text></ImageBackground>   
+      </ImageBackground>
+      <View style={{paddingTop:10}}>
+        <TextInput style={styles.input} placeholder='Search Anime...' placeholderTextColor='white' >  </TextInput>
       </View>
       <ScrollView style={{paddingTop:10}} horizontal={true} >
         <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
@@ -100,37 +104,40 @@ const styles = StyleSheet.create({
   },
   text:{
      textAlign:'center',
-     borderWidth:1,
+     borderWidth:0,
      color:'hwb(120,269%,10%)',
      fontWeight:'bold',
-     borderColor:'white',
+     borderColor:'gray',
      borderCurve:'continuous',
      fontSize:35,
      textAlignVertical:'center',
      paddingTop:0,
-     borderWidth: 9.6,
-     borderRadius:55,
+     borderWidth: 0,
+     borderRadius:0,
      fontWeight:'400',
-     
-     
      
      },
      input:{
-      borderWidth:1,
+      borderWidth:3,
       marginLeft:10,
-      borderColor:'white',
+      borderColor:'green',
       width:200,
       height:30,
       color:'white',
       alignSelf:'center',
+      marginRight:10,
      },
-     bg:{
+     image: {
+      width: 150,
+      height: 150,
+      borderRadius: 150 / 2,
+      overflow: "hidden",
+      borderWidth: 3,
+      borderColor: "green",
+      alignSelf:'center',
+      alignContent:'center',
       paddingTop:10,
-      borderWidth:1,
-      borderColor:'white',
-      borderCurve:'continuous',
-      borderRadius:55,
-     }
+    }
      
 
       
