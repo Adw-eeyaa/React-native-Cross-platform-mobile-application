@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
      },
      input:{
       borderWidth:3,
-      marginLeft:10,
+      marginLeft:15,
       borderColor:'green',
       width:200,
       height:30,
