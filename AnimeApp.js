@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, SafeAreaView, StyleSheet, Text,TouchableOpacity, View,Image,Button, Alert,ImageBackground,TextInput,ScrollView} from 'react-native';
+import { Platform, SafeAreaView, StyleSheet, Text,TouchableOpacity, View,Image,Button, Alert,ImageBackground,TextInput,ScrollView,} from 'react-native';
 import * as Font from 'expo-font';
 import { useRouter } from 'expo-router';
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons.js';
 
 
@@ -13,7 +13,22 @@ const getFonts = () => {
 }
 
 export default function App() {
+  const getFonts = () => {
+    return Font.loadAsync({
+      'nunito-regular':require('./assets/fonts/InterVariable.ttf')
+    })
+  }
   const router = useRouter();
+  useEffect(() => {})
+   const options = {
+      method:'GET',
+      headers:{
+      'X-RapidAPI-Key':'',
+      'X-RapidAPI-Host':'',
+     }
+    };
+
+  
   return (
     <ScrollView style={styles.container} >
       
@@ -116,10 +131,11 @@ const styles = StyleSheet.create({
      borderRadius:0,
      fontWeight:'400',
      
+     
      },
      input:{
       borderWidth:3,
-      marginLeft:15,
+      marginLeft:10,
       borderColor:'green',
       width:200,
       height:30,
