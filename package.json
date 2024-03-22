@@ -15,7 +15,8 @@
     "react": "18.2.0",
     "react-native": "0.73.4",
     "react-native-web": "~0.19.6",
-    "expo-font": "~11.10.3"
+    "expo-font": "~11.10.3",
+    "expo-updates": "~0.24.12"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

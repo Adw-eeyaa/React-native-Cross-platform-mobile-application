@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, SafeAreaView, StyleSheet, Text,TouchableOpacity, View,Image,Button, Alert,ImageBackground,TextInput,ScrollView,} from 'react-native';
+import { Platform, SafeAreaView, StyleSheet, Text,TouchableOpacity, View,Image,Button, Alert,ImageBackground,TextInput,ScrollView,Modal} from 'react-native';
 import * as Font from 'expo-font';
 import { useRouter } from 'expo-router';
 import React,{useState,useEffect} from 'react';
@@ -13,12 +13,14 @@ const getFonts = () => {
 }
 
 export default function App() {
+  
+  const img1 = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Timothy_Ferriss.jpg/330px-Timothy_Ferriss.jpg';
   const getFonts = () => {
     return Font.loadAsync({
       'nunito-regular':require('./assets/fonts/InterVariable.ttf')
     })
   }
-  const router = useRouter();
+  /*const router = useRouter();
   useEffect(() => {})
    const options = {
       method:'GET',
@@ -27,10 +29,14 @@ export default function App() {
       'X-RapidAPI-Host':'',
      }
     };
-
-  
+  */
+  const[isModalVisible,setModalVisible] = useState(false);
+  const[notif,setnotif] = useState(true);
   return (
-    <ScrollView style={styles.container} >
+    
+    <ScrollView style={styles.container}  >
+      
+      <StatusBar backgroundColor='white' />
       
       <ImageBackground source={{uri:'https://jovelon.files.wordpress.com/2014/02/tumblr_n0bwlwivnr1qeodauo1_500.gif'}} style={{marginLeft:-20,marginRight:-20}} ><Text style={styles.text}>Home</Text>
      
@@ -51,7 +57,7 @@ export default function App() {
         
         
         <TouchableOpacity>
-        <Image source={require('./assets/musaigen no phantom world.jpg')} style={{height:350,width:170,borderRadius:10,borderColor:'white',borderWidth:5,paddingTop:300,marginLeft:10}}></Image>
+        <Image  source={require('./assets/musaigen no phantom world.jpg')} style={{height:350,width:170,borderRadius:10,borderColor:'white',borderWidth:5,paddingTop:300,marginLeft:10}}></Image>
         </TouchableOpacity>
         <TouchableOpacity>
         <Image source={require('./assets/AMB.jpg')} style={{height:350,width:160,borderRadius:10,borderColor:'white',borderWidth:5,marginLeft:10}}></Image>
@@ -89,7 +95,7 @@ export default function App() {
         <Image source={require('./assets/sound-euphonium.jpg')} style={{height:350,width:170,borderRadius:10,borderColor:'white',borderWidth:5,paddingTop:300,marginLeft:10}}></Image>
         </TouchableOpacity>
         <TouchableOpacity>
-        <Image source={require('./assets/AMB.jpg')} style={{height:350,width:160,borderRadius:10,borderColor:'white',borderWidth:5,marginLeft:10}}></Image>
+        <Image  source={require('./assets/AMB.jpg')} style={{height:350,width:160,borderRadius:10,borderColor:'white',borderWidth:5,marginLeft:10}}></Image>
         </TouchableOpacity>
         </View>
         
@@ -97,9 +103,24 @@ export default function App() {
       </ScrollView>
       
       <View style={{paddingTop:10,width:100,alignSelf:'center'}}>
-        <Button style={{fontWeight:'bold',color:'black'}} color="orange" title='MORE'  onPress={() => Alert.alert("LMFAO","BRUH",[{text:"YES"},{text:"NO"},])}></Button>
+        <Button  style={{fontWeight:'bold',color:'black'}} color="midnightblue" title='Read blogs'  onPress={() => setModalVisible(true)}></Button>
         <TextInput></TextInput>
         </View>
+        <Modal 
+           visible={isModalVisible}
+           animationType='slide'
+           presentationStyle='pageSheet'
+           onRequestClose={() => setModalVisible(false)}
+           
+        >
+          <View style={{flex:1,backgroundColor:'black',padding:69}}>
+            <Image source={{uri:'https://www.betterup.com/hubfs/Blog%20Images/Personal%20development/personal-development-people-smiling-working.jpg'}} style={{flex:0.5}} />
+            <Text style={{alignSelf:'flex-start',fontSize:30,color:'white',paddingBottom:25,fontWeight:'800'}}>Blogs</Text>
+            <Text style={{color:'white'}}>Personality development is the continuous advancement of character as far as trademark enthusiastic reactions or disposition, a conspicuous style of life, individual jobs and job practices, a bunch of qualities and objectives, average examples of change, trademark relational relations and other connections, trademark attributes, and a somewhat fixed mental self view.
+            </Text>
+            <Button title="Back" color="black" onPress={() => setModalVisible(false)} />
+          </View>
+        </Modal>
         
     </ScrollView>
     
