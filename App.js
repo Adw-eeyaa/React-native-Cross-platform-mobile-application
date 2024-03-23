@@ -47,6 +47,7 @@ export default function App() {
       </View>
       </ImageBackground>
       <View style={{paddingTop:10}}>
+        
         <TextInput style={styles.input} placeholder='Search Anime...' placeholderTextColor='white' >  </TextInput>
       </View>
       <ScrollView style={{paddingTop:10}} horizontal={true} >
@@ -102,10 +103,18 @@ export default function App() {
         
       </ScrollView>
       
-      <View style={{paddingTop:10,width:100,alignSelf:'center'}}>
+      <View style={{paddingTop:10,width:100,alignSelf:'center',paddingBottom:50}}>
         <Button  style={{fontWeight:'bold',color:'black'}} color="midnightblue" title='Read blogs'  onPress={() => setModalVisible(true)}></Button>
-        <TextInput></TextInput>
+        <View style={{height:200,width:200}}>
+          
+        <Text style={{alignItems:'flex-start',fontStyle:'italic',fontWeight:'800',color:'white',paddingTop:10,fontSize:25,marginLeft:-120}}>Quotes for a Growth Mindset</Text>
+        <Text style={{color:'white',alignSelf:'flex-start',marginLeft:-110}}>“Do the best you can until you know better. ...
+“There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.” - ...
+“Stay afraid, but do it anyway. ...
+“One can choose to go back toward safety or forward toward growth.</Text>
         </View>
+        </View>
+    
         <Modal 
            visible={isModalVisible}
            animationType='slide'
