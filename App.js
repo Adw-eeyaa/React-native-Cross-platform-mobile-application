@@ -123,23 +123,18 @@ export default function App() {
         
       </View>
 
-      <ScrollView style={{paddingTop:10}} horizontal={true} >
-        <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
+      <View style={{paddingTop:10}} horizontal={true} >
+        <View style={{flexDirection:'row',alignSelf}}>
         <TouchableOpacity>
         <Image source={{uri:'https://m.media-amazon.com/images/M/MV5BZmUzMThjOTItZGY4ZS00ODcwLTliNTMtYjVkM2JmY2QxNmRhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg'}} style={styles.img}></Image>
         </TouchableOpacity>
         
         
-        <TouchableOpacity >
-        <Image source={require('./assets/sound-euphonium.jpg')} style={styles.img}></Image>
-        </TouchableOpacity>
-        <TouchableOpacity>
-        <Image  source={require('./assets/AMB.jpg')} style={styles.img}></Image>
-        </TouchableOpacity>
+       
         </View>
         
         
-      </ScrollView>
+      </View>
       
       <View style={{paddingTop:10,width:100,alignSelf:'center',paddingBottom:50}}>
         <Button  style={{fontWeight:'bold',color:'black'}} color="midnightblue" title='Read blogs'  onPress={() => setModalVisible(true)}></Button>
