@@ -52,6 +52,7 @@ export default function App() {
 
   return (
     
+    
     <ScrollView style={styles.container}  >
       
       <StatusBar backgroundColor='white' />
@@ -91,27 +92,25 @@ export default function App() {
       </Modal>
 
 
-
+      <View>
+        
+        
       
-        <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
+        <View style={{flexDirection:'row',justifyContent:'space-evenly',alignSelf:'flex-start',marginLeft:10}}>
         <TouchableOpacity>
         <Image source={{uri:'https://img.freepik.com/premium-vector/improvement-mind-level-human-mental-wellbeing-health-confident-mentor-expand-knowledge-gears-self-value-better-faster-thinking-fulfillment-head-learn-balance-vector-illustration_81894-11184.jpg'}} style={styles.img}></Image>
         </TouchableOpacity>
         
-        
-        <TouchableOpacity>
-        <Image  source={require('./assets/musaigen no phantom world.jpg')} style={styles.img}></Image>
-        </TouchableOpacity>
+       
         
         </View>
         
         
+        
       
       <View style={{paddingTop:10}} horizontal={true} >
-        <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
-        <TouchableOpacity>
-        <Image source={require('./assets/burningFightingfighter.jpg')} style={styles.img}></Image>
-        </TouchableOpacity>
+        <View style={{flexDirection:'row',justifyContent:'space-evenly',alignSelf:'flex-end',marginRight:10}}>
+        
         
         
         <TouchableOpacity >
@@ -124,11 +123,11 @@ export default function App() {
       </View>
 
       <View style={{paddingTop:10}} horizontal={true} >
-        <View style={{flexDirection:'row',alignSelf}}>
+        <View style={{flexDirection:'row',alignSelf:'flex-start',marginLeft:10}}>
         <TouchableOpacity>
         <Image source={{uri:'https://m.media-amazon.com/images/M/MV5BZmUzMThjOTItZGY4ZS00ODcwLTliNTMtYjVkM2JmY2QxNmRhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg'}} style={styles.img}></Image>
         </TouchableOpacity>
-        
+        <Text style={{alignSelf:'flex-end',color:'white'}}>Nevah Give up</Text>
         
        
         </View>
@@ -167,8 +166,10 @@ export default function App() {
           
           
         </Modal>
+        </View>
         
     </ScrollView>
+    
     
     
 
@@ -180,7 +181,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:  'black',
+    backgroundColor:'black',
     paddingTop: Platform.OS == 'android' ? 20:0,
     paddingEnd: Platform.OS == 'android'? 0:0,  
 
@@ -202,11 +203,22 @@ const styles = StyleSheet.create({
      
      },
      input:{
-      borderWidth:3,
+      borderWidth:5,
+      borderRadius:70/2,
+      opacity:0.49,
+      backgroundColor:'gray',
+      shadowColor:'white',
+      shadowOffset:{
+        width:15,
+        height:50,
+      },
+      shadowOpacity:0.25,
+      shadowRadius:10,
+      elevation:5,
       marginLeft:10,
-      borderColor:'green',
-      width:200,
-      height:30,
+      borderColor:'gray',
+      width:250,
+      height:38,
       color:'white',
       alignSelf:'center',
       marginRight:10,
@@ -253,10 +265,10 @@ const styles = StyleSheet.create({
       
     },
     img:{
-      height:350,
-      width:160,
+      height:220,
+      width:190,
       borderRadius:10,
-      borderColor:'white',
+      borderColor:'gray',
       borderWidth:5,
       marginLeft:10,
       
