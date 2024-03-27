@@ -1,4 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { Platform, SafeAreaView, StyleSheet, Text,TouchableOpacity, View,Image,Button, Alert,ImageBackground,TextInput,ScrollView,Modal, FlatList} from 'react-native';
 import * as Font from 'expo-font';
 import { useRouter } from 'expo-router';
@@ -11,6 +12,7 @@ const getFonts = () => {
     'nunito-regular':require('./assets/fonts/InterVariable.ttf')
   })
 }
+const stack = createNativeStackNavigator();
 
 export default function App() {
   
