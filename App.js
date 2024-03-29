@@ -17,7 +17,7 @@ const stack = createNativeStackNavigator();
 export default function App() {
   
   const img1 = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Timothy_Ferriss.jpg/330px-Timothy_Ferriss.jpg';
-  /*const getFonts = () => {
+  const getFonts = () => {
     return Font.loadAsync({
       'nunito-regular':require('./assets/fonts/InterVariable.ttf')
     })
@@ -32,7 +32,7 @@ export default function App() {
       'X-RapidAPI-Host':'',
      }
     };
-  */
+  
  const[post,setPost] = useState([]);
  const[username,setUsername] = useState("");
  const[password,setPassword] = useState("");
