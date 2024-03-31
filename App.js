@@ -63,7 +63,7 @@ export default function App() {
      
       
       <View style={{paddingTop:10,paddingBottom:10}}>
-      <ImageBackground source={{uri:'https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl90fs38w1137734vmqyjmifzoeb/public'}} style={styles.image}><Text style={{color:'black',fontSize:20,fontStyle:'normal',fontWeight:'bold',alignSelf:'center',paddingTop:10}}>Trending Anime</Text></ImageBackground>
+      <ImageBackground source={{uri:'https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/02/19183217/Personality-Development.jpg'}} style={styles.image}><Text style={{color:'black',fontSize:20,fontStyle:'normal',fontWeight:'bold',alignSelf:'center',paddingTop:10}}></Text></ImageBackground>
       
       </View>
       </ImageBackground>
@@ -100,7 +100,7 @@ export default function App() {
       
         <View style={{flexDirection:'row',justifyContent:'space-evenly',alignSelf:'flex-start',marginLeft:10}}>
         <TouchableOpacity>
-        <Image source={{uri:'https://img.freepik.com/premium-vector/improvement-mind-level-human-mental-wellbeing-health-confident-mentor-expand-knowledge-gears-self-value-better-faster-thinking-fulfillment-head-learn-balance-vector-illustration_81894-11184.jpg'}} style={styles.img}></Image>
+        <Image source={{uri:'https://www.21kschool.com/us/wp-content/uploads/sites/37/2022/10/5-Tips-For-Students-For-Personality-Development.png'}} style={styles.img}></Image>
         </TouchableOpacity>
         
        
@@ -116,7 +116,7 @@ export default function App() {
         
         
         <TouchableOpacity >
-        <Image source={require('./assets/sound-euphonium.jpg')} style={styles.img}></Image>
+        <Image source={{uri:'https://theyellowspot.com/wp-content/uploads/2018/09/PD.jpg'}} style={styles.img}></Image>
         </TouchableOpacity>
         
         </View>
@@ -127,9 +127,9 @@ export default function App() {
       <View style={{paddingTop:10}} horizontal={true} >
         <View style={{flexDirection:'row',alignSelf:'flex-start',marginLeft:10}}>
         <TouchableOpacity>
-        <Image source={{uri:'https://m.media-amazon.com/images/M/MV5BZmUzMThjOTItZGY4ZS00ODcwLTliNTMtYjVkM2JmY2QxNmRhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg'}} style={styles.img}></Image>
+        <Image source={{uri:'https://eslbrains.com/wp-content/uploads/2023/03/Honest-creative-or-lazy-personality-adjectives-473x381.png'}} style={styles.img}></Image>
         </TouchableOpacity>
-        <Text style={{alignSelf:'flex-end',color:'white'}}>Nevah Give up</Text>
+        
         
        
         </View>
@@ -184,6 +184,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor:'black',
+    
     paddingTop: Platform.OS == 'android' ? 20:0,
     paddingEnd: Platform.OS == 'android'? 0:0,  
 
