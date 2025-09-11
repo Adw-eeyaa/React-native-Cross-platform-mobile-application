@@ -1,0 +1,123 @@
+{
+	"mental_health_data": [
+	  {
+		"type": "motivation",
+		"content": "Stay positive and Keep Pushing forward"
+	  },
+	  {
+		"type": "blog",
+		"title": "How to manage anxiety",
+		"url": "https://psychcentral.com/blog"
+	  },
+	  {
+		"type": "videos",
+		"title": "Ease of Mind",
+		"url": "https://www.youtube.com/watch?v=O9qRyFOLdQk"
+	  },
+	  {
+		"type": "videos",
+		"title": "Mental Health Toolkit",
+		"url": "https://youtube.com/watch?v=CJIXbibQ0jI"
+	  },
+	  {
+		"type": "Quotation",
+		"content": "Mental health is not a destination, it's a journey"
+	  },
+	  {
+		"type": "blog",
+		"title": "Must-read mental health blogs",
+		"url": "https://mentalhealthcommission.ca/blog-posts/57549-must-read-mental-health-blogs-for-2023/"
+	  },
+	  {
+		"type": "videos",
+		"title": "Creating Mental Health and well-being",
+		"url": "https://youtube/watch?v=HRXrfIvRzNY"
+	  },
+	  {
+		"type": "Quotation",
+		"content": "Self-care is not selfish, it's necessary for good mental health."
+	  },
+	  {
+		"type": "videos",
+		"title": "Causes of mental disorder",
+		"url": "https://www.youtube.com/watch?v=ujRwf1HdNjk"
+	  },
+	  {
+		"type": "Quotation",
+		"content": "You have the power to change your relationship with your mental health."
+	  },
+	  {
+		"type": "video",
+		"title": "5-Minute Meditation You Can Do Anywhere",
+		"url": "https://www.youtube.com/watch?v=inpok4MKVLM",
+		"content": "A quick meditation session to help you relax and find peace."
+	  },
+	  {
+		"type": "video",
+		"title": "10-Minute Guided Meditation for Anxiety",
+		"url": "https://www.youtube.com/watch?v=O-6f5wQXSu8",
+		"content": "A guided meditation to reduce anxiety and stress."
+	  },
+	  {
+		"type": "video",
+		"title": "Yoga for Stress Relief and Anxiety",
+		"url": "https://www.youtube.com/watch?v=hJbRpHZr_d0",
+		"content": "A yoga session designed to relieve stress and anxiety."
+	  },
+	  {
+		"type": "video",
+		"title": "Motivational Speech for Overcoming Challenges",
+		"url": "https://www.youtube.com/watch?v=mgmVOuLgFB0",
+		"content": "A motivational speech to help you overcome life's challenges."
+	  },
+	  {
+		"type": "blog",
+		"title": "10 Tips for Better Mental Health",
+		"url": "https://www.mentalhealth.org.uk/publications/how-to-mental-health",
+		"content": "Practical tips to improve your mental health and wellbeing."
+	  },
+	  {
+		"type": "blog",
+		"title": "How to Practice Mindfulness",
+		"url": "https://www.mindful.org/how-to-practice-mindfulness/",
+		"content": "A guide to practicing mindfulness in your daily life."
+	  },
+	  {
+		"type": "blog",
+		"title": "The Benefits of Journaling for Mental Health",
+		"url": "https://www.healthline.com/health/benefits-of-journaling",
+		"content": "Exploring the mental health benefits of keeping a journal."
+	  },
+	  {
+		"type": "blog",
+		"title": "5 Ways to Deal with Stress",
+		"url": "https://www.verywellmind.com/tips-for-dealing-with-stress-3145195",
+		"content": "Effective strategies to manage and reduce stress."
+	  },
+	  {
+		"type": "video",
+		"title": "Morning Motivation - Best Way to Start the Day",
+		"url": "https://www.youtube.com/watch?v=ldX6_fhkgX4",
+		"content": "A motivational video to start your day with positivity and energy."
+	  },
+	  {
+		"type": "video",
+		"title": "Self-Care Tips for Mental Health",
+		"url": "https://www.youtube.com/watch?v=NHLV8PXoY3g",
+		"content": "Tips and advice on self-care practices to improve mental health."
+	  },
+	  {
+		"type": "video",
+		"title": "How to Stay Positive During Tough Times",
+		"url": "https://www.youtube.com/watch?v=H1Jm1OWJ9eM",
+		"content": "A motivational video on staying positive through difficult situations."
+	  },
+	  {
+		"type": "blog",
+		"title": "Understanding and Managing Anxiety",
+		"url": "https://www.anxiety.org/understanding-anxiety",
+		"content": "An in-depth guide on understanding and managing anxiety."
+	  }
+	]
+  }
+  
