@@ -3,7 +3,7 @@ custom-built API which has a lot of mental health content data stored in a JSON 
 
 Homepage
 
-<img style=height:300;width:300>![1720517319381](https://github.com/user-attachments/assets/9e12c28e-fc70-4c0f-8306-574b7a12d389)</img>
+<img src="https://github.com/user-attachments/assets/9e12c28e-fc70-4c0f-8306-574b7a12d389" width="300;"/>
 
 
 Homepage2
