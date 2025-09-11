@@ -8,26 +8,26 @@ Homepage
 
 Homepage2
 
-![1720517331705](https://github.com/user-attachments/assets/53706782-f2d0-44b5-86df-9fd101c57cb3)
+<img src="https://github.com/user-attachments/assets/53706782-f2d0-44b5-86df-9fd101c57cb3" width="300;"/>
+
 
 
 Read-Blogs page(Without API call)
 
-![1720517343792](https://github.com/user-attachments/assets/3b260fc7-db7a-4d4b-a4b8-cb705136772e)
+<img src="https://github.com/user-attachments/assets/3b260fc7-db7a-4d4b-a4b8-cb705136772e" width="300;"/>
 
 
 
 
 Blogs page(with API call)
 
-![1720517436475](https://github.com/user-attachments/assets/9761b170-5253-45ea-9900-0a26afaec7ef)
+<img src="https://github.com/user-attachments/assets/9761b170-5253-45ea-9900-0a26afaec7ef" width="300;"/>
 
 
 
 Login page(stores form input in mySQL )
 
-![1720517362984](https://github.com/user-attachments/assets/78d738c5-2999-4ed1-a379-9a97854d3160)
-
+<img src="https://github.com/user-attachments/assets/78d738c5-2999-4ed1-a379-9a97854d3160" width="300;"/>
 
 
 
