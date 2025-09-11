@@ -1,7 +1,7 @@
 A Cross-Platform Mobile application, built with responsiveness, ease of use, performance and most importantly, mental health wellbeing in mind. This App fetches data from a
 custom-built API which has a lot of mental health content data stored in a JSON file, all of which is hosted by a python flask server, feel free to populate health.json
 
-Homepage
+<h>Homepage</h>
 
 <img src="https://github.com/user-attachments/assets/9e12c28e-fc70-4c0f-8306-574b7a12d389" width="300;"/>
 
